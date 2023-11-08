@@ -36,8 +36,6 @@ int main(){
         cout << "With no digits I can offer no solution.\n";
         return 0;
     }
-    cout << "Input digit is: " << digits << endl;
-    
     max = (pow(10,digits) - 1);
     cout << "Max numerator/denominator value is: "<< setprecision(numeric_limits<long double>::digits10) << max << endl;
     for(long double denMin = 1L; denMin <= max; denMin++){
